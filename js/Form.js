@@ -6,6 +6,7 @@ class Form {
     this.greeting = createElement('h2');
     this.title = createElement('h2');
     this.reset = createButton('Reset');
+    this.ranklable = createElement("h1");
   }
   hide(){
     this.greeting.hide();
@@ -35,6 +36,7 @@ class Form {
 this.reset.mousePressed(()=>{
 game.update(0);
 player.updateCount(0);
+Player.updateCarsAtEnd(0)
 })
   }
-}
+} 
